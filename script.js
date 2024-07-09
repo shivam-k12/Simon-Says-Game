@@ -1,7 +1,6 @@
 let gameSeq=[];
 let userSeq=[];
 let btns=["green","yellow","red","blue"];
-// let h2=document.querySelector("h2");
 let h2 = document.querySelector("#instructions");
 let startBtn = document.querySelector("#startBtn");
 
@@ -16,12 +15,7 @@ startBtn.addEventListener("click", () => {
         levelUp();
     }
 });
-// document.addEventListener("keypress",()=>{
-//     if(start==false){
-//         start=true;
-//         levelUp();
-//     }
-// })
+
 
 function gameFlash(randBtn){
     randBtn.classList.add("gameFlash");

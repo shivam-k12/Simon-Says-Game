@@ -28,7 +28,7 @@ function userFlash(randBtn){
     randBtn.classList.add("userFlash");
     setTimeout(function(){
         randBtn.classList.remove("userFlash");
-    },400); 
+    },200); 
 }
 
 function levelUp(){
@@ -77,4 +77,5 @@ function reset(){
     gameSeq=[];
     userSeq=[];
     level=0;
+    startBtn.style.display = "inline";
 }

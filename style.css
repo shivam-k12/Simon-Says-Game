@@ -72,7 +72,7 @@ h2{
 }
 
 .userFlash{
-    background-color: rgb(39, 157, 3);
+    background-color: purple;
 }
 
 @media(max-width:400px){

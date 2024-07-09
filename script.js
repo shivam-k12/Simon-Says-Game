@@ -1,17 +1,27 @@
 let gameSeq=[];
 let userSeq=[];
 let btns=["green","yellow","red","blue"];
-let h2=document.querySelector("h2");
+// let h2=document.querySelector("h2");
+let h2 = document.querySelector("#instructions");
+let startBtn = document.querySelector("#startBtn");
+
 
 let start=false;
 let level=0;
 
-document.addEventListener("keypress",()=>{
-    if(start==false){
-        start=true;
+startBtn.addEventListener("click", () => {
+    if (!start) {
+        start = true;
+        startBtn.style.display = "none";
         levelUp();
     }
-})
+});
+// document.addEventListener("keypress",()=>{
+//     if(start==false){
+//         start=true;
+//         levelUp();
+//     }
+// })
 
 function gameFlash(randBtn){
     randBtn.classList.add("gameFlash");

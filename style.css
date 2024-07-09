@@ -1,0 +1,88 @@
+/* Importing from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body{
+    width:100%;
+    height:100vh;
+    margin-top:100px;
+    text-align:center;
+    background-color:rgba(35, 217, 217, 0.169);
+    overflow: auto;
+}
+
+h1{
+    margin:20px 0px;
+
+}
+
+h2{
+    margin:20px 0px;
+}
+
+
+.container{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.btn{
+    height:200px;
+    width:200px;
+    border:10px solid black;
+    margin:25px 15px;
+    border-radius: 25px;
+}
+
+.green{
+    background-color: #49D75B;
+}
+
+.red{
+    background-color: #F9301A;
+}
+
+.yellow{
+    background-color:#FFF733;
+}
+
+.blue{
+    background-color:#009EE8;
+}
+
+.gameFlash{
+    background-color: white;
+}
+
+.userFlash{
+    background-color: rgb(39, 157, 3);
+}
+
+@media(max-width:400px){
+    body{
+        margin-top:170px;
+        overflow: hidden;
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+    
+    h2{
+        margin:15px 0px;
+        font-size:1.2rem;
+    }
+
+    .btn{
+        height:150px;
+        width:150px;
+        margin:21px 10px;
+    }
+}
